@@ -32,10 +32,10 @@ def simulate(initial_x, initial_t, A, Omega, D, dt, steps):
 
 initial_x = 0
 initial_t = 0
-steps = 200000
-A = 0.2 #0 to 0.2 A ∝ 1/|ln(pi*sqrt(2)*Omega)|
-Omega = 0.01 #10e-2 to 10e-6
-D = 0.01 #0 to 0.1 
+steps = 50000
+Omega = 0.05
+D = 0.11# set to optimal value 1/(4*np.log(np.sqrt(2)/(np.pi*Omega))) by default
+A = 0.3 
 dt = 0.01
 
 
